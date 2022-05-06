@@ -1,0 +1,45 @@
+Package: eClock
+Title: Accurately fit imbalanced sample ages with DNA methylation data 
+Version: 1.0.0
+Authors@R: 
+    person(given = "Yu",
+           family = "Liu",
+           role = c("aut", "cre"),
+           email = "yuabrahamliu@gmail.com",
+           comment = c(ORCID = "0000-0002-8631-4347"))
+Description: The main purpose of this R package is to provide functions used 
+    to accurately fit sample ages with an imbalanced distribution with DNA 
+    methylation data, using an ensemble framework integrating bootstrapping 
+	and synthetic minority over-sampling technique (SMOTE) methods. It also 
+	contains other functions to do data visualization, DNA methylation feature 
+	conversion and annotation, etc.
+Imports: 
+    ggplot2 (>= 3.3.2),
+    scales (>= 1.1.1),
+    parallel (>= 4.0.2),
+    doParallel (>= 1.0.15),
+    foreach (>= 1.5.0),
+    pheatmap (>= 1.0.12),
+    plyr (>= 1.8.6),
+    glmnet (>= 4.1),
+    AnnotationDbi (>= 1.50.3),
+    IlluminaHumanMethylation450kanno.ilmn12.hg19 (>= 0.6.0),
+    bumphunter (>= 1.30.0),
+    org.Hs.eg.db (>= 3.11.4),
+    TxDb.Hsapiens.UCSC.hg19.knownGene (>= 3.2.2),
+    GenomicFeatures (>= 1.40.1),
+    GenomicRanges (>= 1.40.0),
+    IRanges (>= 2.22.2)
+Suggests: 
+    IlluminaHumanMethylation27kanno.ilmn12.hg19 (>= 0.6.0),
+	IlluminaHumanMethylationEPICanno.ilm10b4.hg19 (>= 0.6.0),
+	knitr,
+    rmarkdown
+Depends: 
+    R (>= 4.0.2)
+License: `use_mit_license(name = find_name())`
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr	
