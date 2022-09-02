@@ -10,6 +10,12 @@ singlenet <- function(trainvar, trainres,
   #library(glmnet)
   #library(doParallel)
   #library(foreach)
+  unregister_dopar <- function(){
+  
+  env <- foreach:::.foreachGlobals
+  rm(list=ls(name=env), pos=env)
+  
+}
   
   a <- alphas
   #Tune the value of alpha through a line search with the parallelism
@@ -36,6 +42,7 @@ singlenet <- function(trainvar, trainres,
     
     if(threads > 1){
       parallel::stopCluster(cl)
+      unregister_dopar()
     }
     
     
