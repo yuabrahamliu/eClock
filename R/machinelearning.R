@@ -2,6 +2,13 @@
 #Single elastic net, single ensemble, single balancing####
 #cross elastic net, cross ensemble, cross balancing, ensemble prediction
 
+unregister_dopar <- function(){
+  
+  env <- foreach:::.foreachGlobals
+  rm(list=ls(name=env), pos=env)
+  
+}
+
 singlenet <- function(trainvar, trainres, 
                       threads = 1, alphas = c(0.5), seednum = 1, 
                       foldnum = 10, errortype = 'min'){
@@ -10,12 +17,6 @@ singlenet <- function(trainvar, trainres,
   #library(glmnet)
   #library(doParallel)
   #library(foreach)
-  unregister_dopar <- function(){
-  
-  env <- foreach:::.foreachGlobals
-  rm(list=ls(name=env), pos=env)
-  
-}
   
   a <- alphas
   #Tune the value of alpha through a line search with the parallelism
