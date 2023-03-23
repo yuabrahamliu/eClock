@@ -9,6 +9,10 @@ DNA methylation (DNAm) has a close relationship to senescence, so it has been us
 
 A clock model is essentially a penalized regression model using squared error loss function to calculate empirical risk and using norm of the regression coefficients to calculate structural risk. Because it is learned from data, its performance is heavily influenced by sample age distribution, and if that of the training data is biased, the model performance on samples with a small distribution density will become weak. To solve this problem, we developed the R package *eClock (ensemble-based clock)*. It combines bagging and SMOTE (Synthetic Minority Over-sampling Technique) methods to adjust the biased distribution and predict DNAm age with an ensemble model, which can improve the model performance on rare samples significantly. In addition, it also provides other functions to train the normal clock model, display features, convert methylation probe/gene/DMR (DNA methylation region) values, etc.
 
+## Citation
+
+Liu Y (2022) [*eClock*: An ensemble-based method to accurately predict ages with a biased distribution from DNA methylation data.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267349) *PLOS ONE* 17(5): e0267349. https://doi.org/10.1371/journal.pone.0267349. PMID: 35522643; PMCID: PMC9075636.
+
 ## Package installation
 
 Code and documentation of *eClock* are freely available at <https://github.com/yuabrahamliu/eClock>.
