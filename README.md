@@ -11,7 +11,7 @@ A clock model is essentially a penalized regression model using squared error lo
 
 ## Citation
 
-Liu Y (2022) [*eClock*: An ensemble-based method to accurately predict ages with a biased distribution from DNA methylation data.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267349) *PLOS ONE* 17(5): e0267349. PMID: 35522643; PMCID: PMC9075636.
+Liu Y (2022) [*eClock*: An ensemble-based method to accurately predict ages with a biased distribution from DNA methylation data.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267349) PLOS ONE 17(5): e0267349. PMID: 35522643; PMCID: PMC9075636.
 
 ## Package installation
 
