@@ -1,6 +1,6 @@
 # Tutorial for R package eClock
 
-## Yu Liu
+## 
 ## 3/11/2022
 
 ## Introduction
