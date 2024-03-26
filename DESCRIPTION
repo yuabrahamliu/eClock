@@ -13,6 +13,7 @@ Description: The main purpose of this R package is to provide functions used
 	and synthetic minority over-sampling technique (SMOTE) methods. It also 
 	contains other functions to do data visualization, DNA methylation feature 
 	conversion and annotation, etc.
+biocViews: 
 Imports: 
     ggplot2 (>= 3.3.2),
     scales (>= 1.1.1),
